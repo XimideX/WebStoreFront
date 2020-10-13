@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { OnInit } from '@angular/core';
 import { AppRoutingModule,routingComponets } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WebstoreComponent } from './webstore/webstore.component';
+import { CookieService } from 'ngx-cookie-service';
 
 
 @NgModule({
@@ -21,7 +21,7 @@ import { WebstoreComponent } from './webstore/webstore.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ CookieService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
