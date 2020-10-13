@@ -1,24 +1,18 @@
-
-
-<Body>
-
     <div id>
         <p id="p1Home">Bem Vindo ao</p>
         <p id="p2Home"> Cadastrando</p>
     </div>
    
-    <div id="conteinerHome">
-        <p id="p3Home">Faça Login Para Entrar </p><br>
+    <div id="containerHome">
+        <p id="p3Home">Login </p><br>
         <form id="formHome">
-            e-mail<br>
-            <input type="nome" name="email"><br> 
+            Login<br>
+            <input [(ngModel)]="name" type="text" name="name"><br> 
             Senha<br>
-            <input type="password" name="password"><br>
+            <input [(ngModel)]="password" type="text" name="password"><br>
            
         </form>
-        <button id="buttonLogin" type = "submit"> Salvar </button>  
+        <button id="buttonLogin" (click)="registerUser()"> Logar </button>  
+        <!-- <button id="buttonLogin" [routerLink]="'/webstore'"> Logar </button>   -->
     </div>
-
-   
-</Body>
 

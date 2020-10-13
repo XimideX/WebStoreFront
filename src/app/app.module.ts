@@ -1,18 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import{FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { OnInit } from '@angular/core';
 import { AppRoutingModule,routingComponets } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { CatalogoComponent } from './catalogo/catalogo.component';
 import { HttpClientModule } from '@angular/common/http';
+import { WebstoreComponent } from './webstore/webstore.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponets
+    routingComponets,
+    WebstoreComponent
   ],
   imports: [
     BrowserModule,
