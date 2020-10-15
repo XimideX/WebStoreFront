@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WebstoreComponent } from './webstore/webstore.component';
 import { CookieService } from 'ngx-cookie-service';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponets,
-    WebstoreComponent
+    WebstoreComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

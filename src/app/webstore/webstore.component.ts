@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 
 @Component({
@@ -9,9 +10,13 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class WebstoreComponent implements OnInit {
 
-  constructor(private http: HttpClient, private cookieService: CookieService) { }
+  constructor(private http: HttpClient, private cookieService: CookieService, private router: Router) { }
 
   ngOnInit(): void {
+    if (this.cookieService.get('Ximid.Cookie') == "")
+    {
+      this.router.navigate(['home']);
+    } 
   }
 
   public logOut(): void {
