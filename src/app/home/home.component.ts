@@ -39,10 +39,10 @@ export class HomeComponent implements OnInit {
       name: this.usuario.name,
       password: this.usuario.password,
     }, httpOptions).toPromise().then((data: any) => {
-      if (this.cookieService.get('Ximid.Cookie') != "")
-      {
-        this.router.navigate(['webstore']);
-      }
+      // if (this.cookieService.get('Ximid.Cookie') != "")
+      // {
+      //   this.router.navigate(['webstore']);
+      // }
     })
 
   }

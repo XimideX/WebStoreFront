@@ -16,17 +16,17 @@ export class CatalogoComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router, private cookieService: CookieService) {}
   
   ngOnInit(): void {
-    if (this.cookieService.get('Ximid.Cookie') == "")
-    {
-      this.router.navigate(['home']);
-    } 
+    // if (this.cookieService.get('Ximid.Cookie') == "")
+    // {
+    //   this.router.navigate(['home']);
+    // } 
     this.product= new Product();
     this.product.name="";
     this.product.value = null;
     this.product.codigo = "";
     this.product.description = "";
     this.product.quantity =null;
-    this.getData();
+    // this.getData();
   }
   
     

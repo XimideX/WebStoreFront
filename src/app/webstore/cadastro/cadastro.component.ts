@@ -17,10 +17,10 @@ export class CadastroComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router, private cookieService: CookieService) {}
   
   ngOnInit(): void {
-    if (this.cookieService.get('Ximid.Cookie') == "")
-    {
-      this.router.navigate(['home']);
-    } 
+    // if (this.cookieService.get('Ximid.Cookie') == "")
+    // {
+    //   this.router.navigate(['home']);
+    // } 
     this.product= new Product();
     this.product.name="";
     this.product.value = null;

@@ -1,0 +1,52 @@
+.conteiner {
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    border:solid 2px red;
+    
+   
+}
+
+.caixa {
+    width: 300px;
+    height: 180px;
+    border:solid 2px black;
+    background-color: #FFF;
+    padding: 2%;
+    border-radius: 25px;
+    border:solid 2px red;
+}
+
+body {
+    background-color: #EFEFEF;
+    border:solid 2px red;
+}
+
+input {
+    background-color: #FFF;
+    border: 1px solid blue;
+    display: block;
+    height: 20en;
+    width: 90%;
+    padding: 10px; 
+}
+.esquerda{
+float: left;
+
+}
+
+.direita{
+float: right;
+padding: 10em;
+
+}
+
+
+/* 
+.test {
+    background-color: #FFF;
+    border-color: red;
+    padding: 6px;
+    display: block;
+    height: 20px;
+}  */
