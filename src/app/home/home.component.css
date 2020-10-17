@@ -1,0 +1,54 @@
+#p1Home{
+    color: #C0C46F;
+    margin: 10px;
+    font-size:30px;
+}
+
+
+#p2Home{
+   
+    margin: 100px;
+    font-size:35px;
+    /* color: #7d014a; */
+}
+
+#p3Home{
+   
+    margin: 10px;
+    font-size:25px;
+    color: red;
+    padding: 10px;
+    /* border:2px solid red; */
+    
+}
+#conteinerHome{
+    width:280px;
+    height: 400px;
+    margin:200px;
+    background:#fff;
+    border-radius:25px;
+    float: right;
+    margin-top: -50px;
+    float: right;
+    margin-right: 200px;
+    /* border:2px solid red; */
+}
+#formHome{
+    
+    margin-top: 20px;
+    padding: 60px;
+    /* border:2px solid red; */
+}
+#buttonLogin{
+    background-color: #C0C46F;
+    border-color: #C0C46F;
+    color:#fff;
+    text-decoration:10px;
+    border-radius:15px;
+    width:250px;
+    height: 40px;
+    float: right center;
+    margin: 20px;  
+    /* border:2px solid red; */
+ }   
+
