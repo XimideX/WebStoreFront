@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
 import { Product } from 'src/models/Product.model';
 
 @Component({
@@ -11,9 +13,13 @@ export class CatalogoComponent implements OnInit {
 
   public product: Product;
   
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router, private cookieService: CookieService) {}
   
   ngOnInit(): void {
+    if (this.cookieService.get('Ximid.Cookie') == "")
+    {
+      this.router.navigate(['home']);
+    } 
     this.product= new Product();
     this.product.name="";
     this.product.value = null;

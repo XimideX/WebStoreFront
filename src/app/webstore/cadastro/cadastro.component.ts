@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import{HttpClient} from '@angular/common/http';
-import{Product} from '../../models/Product.model';
+import{Product} from '../../../models/Product.model';
+import { CookieService } from 'ngx-cookie-service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -12,9 +14,13 @@ export class CadastroComponent implements OnInit {
   
   public product: Product;
   
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router, private cookieService: CookieService) {}
   
   ngOnInit(): void {
+    if (this.cookieService.get('Ximid.Cookie') == "")
+    {
+      this.router.navigate(['home']);
+    } 
     this.product= new Product();
     this.product.name="";
     this.product.value = null;
