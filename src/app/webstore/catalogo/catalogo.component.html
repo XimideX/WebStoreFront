@@ -7,27 +7,33 @@
 
 <div class="conteiner">
     <div class="caixa">
-        <input type="text" name="produto">
-        <input type="text" name="preco">
-        <input type="text" name="codigoBarras">
-        <input type="text" name="quantidadeEstoque">
-        <input type="text" name="quantidadeEstoque">
+        <ul>
+              <!-- <li>{{listProduct[0].name}}</li>   -->
+              <li *ngFor="let a of listProduct; index as i;"> 
+                  {{a.name}}
+                
+              </li>
+            
+              <!-- <li>{{listProduct[0].name}}</li> -->
+ 
+        </ul>
     </div>
 
     <div class="caixa">
-        <input type="text ">
-        <input type="text ">
-        <input type="text ">
-        <input type="text ">
-        <input type="text ">
+        <ul>
+            <!-- <li>{{listProduct[0].name}}</li>   -->
+            <li *ngFor="let a of listProduct; index as i;"> 
+                {{a.name}}
+              
+            </li>
+          
+            <!-- <li>{{listProduct[0].name}}</li> -->
+
+      </ul>
     </div>
 
     <div class="caixa ">
-        <input type="text ">
-        <input type="text ">
-        <input type="text ">
-        <input type="text ">
-        <input type="text ">
+        
 
     </div>
 
@@ -39,11 +45,12 @@
 
 <div class="conteiner ">
     <div class="caixa ">
-        <input type="text ">
-        <input type="text ">
-        <input type="text ">
-        <input type="text ">
-        <input type="text ">
+      
+             
+    </div>
+
+    <div class="caixa ">
+        
     </div>
 
     <div class="caixa ">
@@ -51,15 +58,6 @@
         <input type="text ">
         <input type="text ">
         <input type="text ">
-        <input type="text ">
-    </div>
-
-    <div class="caixa ">
-        <input type="text ">
-        <input type="text ">
-        <input type="text ">
-        <input type="text ">
-        <input type=" ">
     </div>
 
 

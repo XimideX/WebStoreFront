@@ -6,8 +6,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { routingComponets, AppRoutingModule } from '../app-routing.module';
 import { WebstoreComponent } from './webstore.component';
 
-
-
 @NgModule({
   declarations: [
     WebstoreComponent,
